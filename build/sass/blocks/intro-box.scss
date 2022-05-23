@@ -1,0 +1,12 @@
+.intro-box {
+  color: rgba(255, 255, 255, 0.6);
+
+  &__title {
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  &_margin-b-sm {
+    margin-bottom: 15px;
+  }
+}

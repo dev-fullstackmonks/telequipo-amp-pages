@@ -1,0 +1,82 @@
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+
+  &.bg {
+    background: url(img/green-bg.jpg) repeat left top;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgba(3, 136, 129, 0.8);
+  text-shadow: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+a {
+  color: #039be5;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+iframe {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  outline: none;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}

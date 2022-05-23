@@ -1,0 +1,33 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'All pages'
+  - var pageDescription = 'desc'
+  - var pageKeywords = 'key words'
+
+//- block ampScripts
+//-   // begin AMP Scripts
+//-   script(async src="https://cdn.ampproject.org/v0.js")
+//-   script(async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js")
+//-   script(async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js")
+//-   script(async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js")
+//-   script(async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js")
+//-   script(async custom-element="amp-facebook-page" src="https://cdn.ampproject.org/v0/amp-facebook-page-0.1.js")
+//-   script(async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js")
+//-   script(async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js")
+//-   script(async custom-element="amp-date-picker" src="https://cdn.ampproject.org/v0/amp-date-picker-0.1.js")
+//-   // end AMP Scripts
+
+block content
+  .main-wrapper(style="color:white")
+    H1 telequipo AMP-pages
+    UL
+      LI(style="margin-bottom: 20px")
+        A(href="https://alexkazakov.info/layout/telequipo-amp-pages/sub-category.html" target="_blank" style="color:white") Sub-category 
+      LI(style="margin-bottom: 20px")
+        A(href="https://alexkazakov.info/layout/telequipo-amp-pages/product-card.html" target="_blank" style="color:white") Product-card
+      LI(style="margin-bottom: 20px")
+        A(href="https://alexkazakov.info/layout/telequipo-amp-pages/locations.html" target="_blank" style="color:white") Locations
+      LI(style="margin-bottom: 20px")
+        A(href="https://alexkazakov.info/layout/telequipo-amp-pages/ui-kit.html" target="_blank" style="color:white") UI-kit
+

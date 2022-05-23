@@ -1,0 +1,83 @@
+include   bemto/bemto
+include   core/mixins
+
+doctype html
+html(amp lang="en")
+  block vars
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+    // begin Remove robots tag
+    meta(name="robots" content="noindex, nofollow")
+    // end Remove robots tag
+
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+
+
+    // begin AMP Scripts
+    script(async src="https://cdn.ampproject.org/v0.js")
+    script(async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js")
+    script(async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js")
+
+
+    script(async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js")
+    script(async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js")
+    script(async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js")
+    script(async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js")
+    script(async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js")
+    // end AMP Scripts
+
+    link(rel="canonical" href="https://www.example.com/url/to/normal-page.html")
+
+    // begin Add the following to the non-AMP page:
+    // link(rel="amphtml" href="https://www.example.com/url/to/amp/amp-page.html")
+    // end Add the following to the non-AMP page:
+
+    link(href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700&display=swap" rel="stylesheet")
+    link(rel="shortcut icon" type="image/png" href="favicon.png")
+
+    title #{pageTitle}
+    meta(name='description', content= pageDescription)
+    meta(name='keywords', content= pageKeywords)
+
+
+    // begin Default Style. Do not touch 
+    | <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    // end Default Style. Do not touch 
+    style(amp-custom)
+  body(style="background-color: #fff;")
+
+    +b.container(style="box-shadow: 0 3px 15px 0 rgba(0,0,0,0.25); padding:30px")
+      +b.H2(style="font-size: 38px; margin-bottom: 30px;") Ui-kit
+
+      +b.H2(style="font-size: 30px; margin: 30px 0 20px; 0") Text
+
+      +b.H3(style="margin-bottom: 10px") Headers
+      h1 Item number one
+      h2 Item number one
+      h3 Item number one
+      h4 Item number one
+      h5 Item number one
+      h6 Item number one
+
+      br
+
+      +b.H3(style="margin-bottom: 10px") List
+      ul
+        li Item number one
+        li Item number two
+        li Item number three
+
+      ol
+        li Item number one
+        li Item number two
+        li Item number three
+
+      +b.H3(style="margin-bottom: 10px") Paragraph
+      p She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end. Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in. Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye. Five with seen put need tore add neat. Bringing it is he returned received raptures. 
+
+
+
+
+    script(src="js/bundle.min.js") 

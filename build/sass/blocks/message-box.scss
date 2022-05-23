@@ -1,0 +1,11 @@
+.message-box {
+  &_product-card {
+    bottom: 20px;
+    position: fixed;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,9 @@
+mixin input-box(input, helpText)
+  // begin Input-Box
+  +b.input-box&attributes(attributes)
+    if input.button == "messageBoxSendIcon"
+      +e.BUTTON.button._message-box-send-icon.clear-btn(type="submit", aria-label="Send")
+
+    +e.LABEL.label 
+      +e.INPUT.input-text(id=(input.inputId ? input.inputId  : false),  type= input.type, name= input.name, placeholder= input.placeholder, class=(input.state ? input.state  : false), disabled= (input.state === "disabled"? input.state  : false), pattern= (input.pattern ? input.pattern : false), required= (input.required ? "required"  : false), mask= (input.mask ? input.mask : false), mask-output= (input.maskOutput ? input.maskOutput : false), maxlength=(input.maxLength ? input.maxLength  : false),  min=(input.min ? input.min  : false), autocomplete=(input.autocomplete ? input.autocomplete  : false), max=(input.max ? input.max  : false) )
+  // end Input-Box

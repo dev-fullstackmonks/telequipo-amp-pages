@@ -1,0 +1,29 @@
+extends core/layout.pug
+
+block vars
+  - var pageTitle = 'Locations'
+  - var pageDescription = ''
+  - var pageKeywords = ''
+  - var page = "locations"
+  - var headerTheme = ""
+
+block ogProperty
+
+block schema
+
+block content
+  .main-wrapper.pos-relative  
+    +b.SECTION.section._locations
+      .container
+        // begin Locations
+        +b.UL.locations.clear-list
+          +e.LI.item
+            +e.A.item-link.display-b(href="sub-category.html") Albania
+          +e.LI.item
+            +e.A.item-link.display-b(href="sub-category.html") Algeria
+          +e.LI.item
+            +e.A.item-link.display-b(href="sub-category.html") India
+        // end Locations
+
+
+

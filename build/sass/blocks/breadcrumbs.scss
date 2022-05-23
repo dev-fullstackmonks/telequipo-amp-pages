@@ -1,0 +1,22 @@
+.breadcrumbs {
+  color: #fff;
+  display: flex;
+  font-size: 1.8rem;
+
+  &__item-link {
+    color: #fff;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &_padding-t-lg {
+    padding-top: 50px;
+  }
+
+  &_margin-b-md {
+    margin-bottom: 30px;
+  }
+}

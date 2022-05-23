@@ -1,0 +1,15 @@
+.locations {
+  &__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:first-child {
+      border-top-color: transparent;
+    }
+  }
+
+  &__item-link {
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 20px 15px 10px;
+  }
+}

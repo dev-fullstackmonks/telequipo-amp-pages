@@ -1,0 +1,47 @@
+include ../bemto/bemto
+include   mixins
+
+doctype html
+html(amp, lang="en")
+  block vars
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
+
+    title #{pageTitle}
+    meta(name='description', content= pageDescription)
+    meta(name='keywords', content= pageKeywords)
+
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+
+    //- block ampScripts
+    // begin AMP Scripts
+    script(async src="https://cdn.ampproject.org/v0.js")
+    script(async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js")
+    script(async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js")
+    script(async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js")
+    script(async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js")
+    script(async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js")
+    // end AMP Scripts
+
+    style(amp-custom)
+
+    // begin Default Style. Do not touch 
+    | <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    // end Default Style. Do not touch 
+
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet")
+    link(rel="canonical" href="https://alexkazakov.info/layout/telequipo-amp-pages/sub-category.html")
+    link(rel="shortcut icon" href="assets/images/favicon.ico")
+
+    block ogProperty
+
+    block schema
+
+  body.bg
+    block content
+
+
+
+    block scripts 

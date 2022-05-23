@@ -1,0 +1,53 @@
+.catalog-box {
+  background-color: $primary;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 15px;
+
+  &__col {
+    min-height: 1px;
+    width: 100%;
+
+    &_left {
+      flex: 0 0 calc(100% - 150px);
+      max-width: calc(100% - 150px);
+      padding-right: 20px;
+
+      @include media('>sm') {
+        flex: 0 0 calc(100% - 200px);
+        max-width: calc(100% - 200px);
+      }
+    }
+
+    &_right {
+      flex: 0 0 150px;
+      max-width: 150px;
+
+      @include media('>sm') {
+        flex: 0 0 200px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__title-link {
+    color: #fff;
+    margin-bottom: 7px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__desc {
+    font-size: 14px;
+    @include media('>sm') {
+      font-size: 1.6rem;
+    }
+  }
+
+  &_margin-b-sm {
+    margin-bottom: 15px;
+  }
+}

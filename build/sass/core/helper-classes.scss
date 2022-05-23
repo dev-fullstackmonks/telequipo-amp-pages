@@ -1,0 +1,161 @@
+.hidden {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.main-color {
+  color: $primary;
+}
+
+.color-black {
+  color: #333;
+}
+
+.success {
+  color: $success;
+}
+
+.align-i-s {
+  align-items: flex-start;
+}
+
+.align-i-e {
+  align-items: flex-end;
+}
+
+.align-i-c {
+  align-items: center;
+}
+
+.display-f {
+  display: flex;
+}
+
+.display-b {
+  display: block;
+}
+
+.display-i-b {
+  display: inline-block;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.container-z {
+  position: relative;
+  z-index: 1;
+}
+
+.clear-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 1px;
+  width: 100%;
+}
+
+.font-weight-n {
+  font-weight: normal;
+}
+
+.font-weight-b {
+  font-weight: bold;
+}
+
+.flex-dir-c {
+  flex-direction: column;
+}
+
+.float-r {
+  float: right;
+}
+
+.flex-wrap-w {
+  flex-wrap: wrap;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.justify-c-s-b {
+  justify-content: space-between;
+}
+
+.justify-c-e {
+  justify-content: flex-end;
+}
+
+.justify-c-c {
+  justify-content: center;
+}
+
+.img-full-width {
+  height: auto;
+  width: 100%;
+}
+
+.overflow-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-align-c {
+  text-align: center;
+}
+
+.text-align-r {
+  text-align: right;
+}
+
+.text-align-l {
+  text-align: left;
+}
+
+.text-transform-u {
+  text-transform: uppercase;
+}
+
+.text-decoration-u {
+  text-decoration: underline;
+}

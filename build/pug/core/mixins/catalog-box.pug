@@ -1,0 +1,10 @@
+mixin catalog-box(data)
+  +b.catalog-box&attributes(attributes)
+    +e.row.display-f
+      +e.col._left.display-f.flex-dir-c.justify-c-c
+        +e.title-link.display-b(href="product-card.html") 
+          +e.H2.title.font-weight-n= data.info.title
+        +e.P.desc= data.info.desc
+      if block 
+        block
+

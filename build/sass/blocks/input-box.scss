@@ -1,0 +1,65 @@
+.input-box {
+  position: relative;
+
+  &__label {
+    display: block;
+    position: relative;
+  }
+
+  &__input-text {
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    display: block;
+    font-size: 1.8rem;
+    height: 64px;
+    line-height: 1.3;
+    padding: 10px 10px 10px 16px;
+    width: 100%;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: #a1a1a1;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: #fff;
+      border-color: #e8e9ec;
+      color: #e8e9ec;
+
+      &::placeholder {
+        color: #e8e9ec;
+      }
+    }
+  }
+
+  &__button {
+    &_message-box-send-icon {
+      background: url(img/btn.svg) no-repeat center center;
+      background-size: cover;
+      border-radius: 7px;
+      height: 42px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      z-index: 3;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_button {
+    .input-box__input-text {
+      padding-right: 60px;
+    }
+  }
+}

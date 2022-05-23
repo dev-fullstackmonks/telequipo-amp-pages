@@ -1,0 +1,9 @@
+mixin breadcrumbs(data, ...items)
+  +b.NAV.breadcrumbs(aria-label="breadcrumb")&attributes(attributes)
+    +e.OL.items.clear-list.display-f.flex-wrap-w
+      each item in items
+        +e.LI.item 
+          +e.A.item-link(href=item.href)= item.text
+          +e.SPAN.separator(aria-hidden="true") &nbsp;>&nbsp; 
+
+      +e.LI.item._current= data.info.current

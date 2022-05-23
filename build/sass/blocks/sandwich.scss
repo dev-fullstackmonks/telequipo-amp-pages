@@ -1,0 +1,47 @@
+.sandwich {
+  border-radius: 2px;
+  background-color: #fff;
+  height: 30px;
+  position: relative;
+  width: 30px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__sandwich-bar {
+    background-color: #444444;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+
+    &:before,
+    &:after {
+      background-color: #444444;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    &:before {
+      top: 0;
+      transform: translateY(-6px);
+    }
+
+    &:after {
+      bottom: 0;
+      transform: translateY(6px);
+    }
+  }
+
+  &_product-card {
+    left: 10px;
+    position: absolute;
+    top: 38px;
+  }
+}

@@ -1,0 +1,5 @@
+mixin intro-box(data)
+  +b.intro-box&attributes(attributes)
+    +e.H1.title.font-weight-n= data.info.title
+    if data.info.desc
+      +e.SPAN.desc= data.info.desc
